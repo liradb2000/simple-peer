@@ -3,9 +3,9 @@ const debug = require('debug')('simple-peer')
 const getBrowserRTC = require('get-browser-rtc')
 const randombytes = require('randombytes')
 const stream = require('readable-stream')
-const queueMicrotask = require('queue-microtask') // TODO: remove when Node 10 is not supported
 const errCode = require('err-code')
 const { Buffer } = require('buffer')
+const queueMicrotask = window.queueMicrotask // TODO: remove when Node 10 is not supported
 
 const MAX_BUFFERED_AMOUNT = 64 * 1024
 const ICECOMPLETE_TIMEOUT = 5 * 1000

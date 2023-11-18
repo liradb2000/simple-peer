@@ -15,7 +15,6 @@
     "debug": "^4.3.2",
     "err-code": "^3.0.1",
     "get-browser-rtc": "^1.1.0",
-    "queue-microtask": "^1.2.3",
     "randombytes": "^2.1.0",
     "readable-stream": "^3.6.0"
   },
